@@ -26,12 +26,12 @@ Você é um cientista de dados no Santander e recebeu a tarefa de envolver seus 
 Extraia a lista de IDs de usuário a partir do arquivo CSV. Para cada ID, faça uma requisição GET para obter os dados do usuário correspondente.
 
 
-1. 
+1. Iremos importar a biblioteca pandas e definir o dataframa como o csv feito anteriormente, declarando cada coluna na tabela para cada ID
 
->`import pandas as pd`
->`df = pd.read_csv('SDW2023.csv')` 
->`user_ids = df['UserID'].tolist()`
->`print(user_ids)`
+```import pandas as pd
+df = pd.read_csv('SDW2023.csv')
+User_ids = df['UserID'].tolist()
+print(user_ids)```
 
 
 2. 
