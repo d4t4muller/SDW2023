@@ -26,25 +26,39 @@ Você é um cientista de dados no Santander e recebeu a tarefa de envolver seus 
 Extraia a lista de IDs de usuário a partir do arquivo CSV. Para cada ID, faça uma requisição GET para obter os dados do usuário correspondente.
 
 
-1. Iremos importar a biblioteca pandas e definir o dataframa como o csv feito anteriormente, declarando cada coluna na tabela para cada ID
+1. Iremos importar a biblioteca pandas e definir o dataframa como o csv feito anteriormente, declarando cada coluna na tabela para cada ID.
 
-```import pandas as pd
+>  Importando bibliotecas necessarias
+```
+import pandas as pd
+import requests
+import json
+```
+
+
+> declarando cada coluna na tabela para cada ID
+```
 df = pd.read_csv('SDW2023.csv')
 User_ids = df['UserID'].tolist()
-print(user_ids)```
+print(user_ids)
+
+```
 
 
-2. 
+2.  Codando a função para retorno dos valores.
 
->``import requests``
->``import json``
 
->``def get_user(id):``
-> `` response = requests.get(f'{sdw2023_api_url}/users/{id}')``
->  ``return response.json() if response.status_code == 200 else None``
->
->``users = [user for id in user_ids if (user := get_user(id)) is not None]``
->``print(json.dumps(users, indent=2))``
+> Declaramos a função get_user() onde response armazera o id e retorna um json caso a resposta for 200
+
+```
+def get_user(id):
+    response = requests.get(f'{sdw2023_api_url}/users/{id}')
+    return response.json() if response.status_code == 200 else None
+
+users = [user for id in user_ids if (user := get_user(id)) is not None]
+print(json.dumps(users, indent=2))
+
+```
 
 
 3.  Isto ira te retornar um arquivo.json com mais ou menos a sintaxe a seguir:
