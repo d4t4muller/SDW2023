@@ -47,78 +47,25 @@ Extraia a lista de IDs de usuário a partir do arquivo CSV. Para cada ID, faça 
 >``print(json.dumps(users, indent=2))``
 
 
-3. 
-[
-    "id": 4,
-    "name": "Pyterson",
-    "account": {
-      "id": 7,
-  {
-      "number": "00001-1",
-      "agency": "0001",
-      "balance": 0.0,
-      "limit": 500.0
+3.  Isto ira te retornar um arquivo.json com mais ou menos a sintaxe a seguir:
+```
+[   {
+        "id": 404,
+        "name": "d4t4muller",
+        "account": 
+        "id": 7
     },
-    "card": {
-      "id": 4,
-      "number": "**** **** **** 1111",
-      "limit": 1000.0
+    {
+        "number": "00001-1",
+        "agency": "0001",
+        "balance": 0.0,
+        "limit": 500.0
     },
-    "features": [],
-    "news": [
-      {
-        "id": 9,
-        "icon": "https://digitalinnovationone.github.io/santander-dev-week-2023-api/icons/credit.svg",
-        "description": "Pyterson, invista hoje para garantir um futuro seguro e pr\u00f3spero. Seu futuro agradece!"
-      }
-    ]
-  },
-  {
-    "id": 5,
-    "name": "Pip",
-    "account": {
-      "id": 8,
-      "number": "00002-2",
-      "agency": "0001",
-      "balance": 0.0,
-      "limit": 500.0
+        "card": {
+        "id": 4,
+        "number": "**** **** **** 1111",
+        "limit": 1000.0
     },
-    "card": {
-      "id": 5,
-      "number": "**** **** **** 2222",
-      "limit": 1000.0
-    },
-    "features": [],
-    "news": [
-      {
-        "id": 10,
-        "icon": "https://digitalinnovationone.github.io/santander-dev-week-2023-api/icons/credit.svg",
-        "description": "Invista hoje para um futuro seguro e est\u00e1vel, Pip. O seu futuro financeiro depende disso!"
-      }
-    ]
-  },
-  {
-    "id": 6,
-    "name": "Pep",
-    "account": {
-      "id": 9,
-      "number": "00003-3",
-      "agency": "0001",
-      "balance": 0.0,
-      "limit": 500.0
-    },
-    "card": {
-      "id": 6,
-      "number": "**** **** **** 3333",
-      "limit": 1000.0
-    },
-    "features": [],
-    "news": [
-      {
-        "id": 11,
-        "icon": "https://digitalinnovationone.github.io/santander-dev-week-2023-api/icons/credit.svg",
-        "description": "Oi Pep, investir \u00e9 a chave para multiplicar seu dinheiro. N\u00e3o deixe sua grana parada!"
-      }
-    ]
-  }
-]``
+    "features": []
+]
+```
