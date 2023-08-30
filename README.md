@@ -17,8 +17,8 @@ Você é um cientista de dados no Santander e recebeu a tarefa de envolver seus 
 
 3. Uma vez que a mensagem para cada cliente esteja pronta, você vai enviar essas informações de volta para a API, atualizando a lista de "news" de cada usuário usando o endpoint PUT https://sdw-2023-prd.up.railway.app/users/{id}.
 
->`# Utilize sua própria URL se quiser ;)`
-> [Repositório da API:](https://github.com/digitalinnovationone/santander-dev-week-2023-api)
+
+[Repositório da API:](https://github.com/digitalinnovationone/santander-dev-week-2023-api)
 >`sdw2023_api_url = 'https://sdw-2023-prd.up.railway.app'`
 
 
