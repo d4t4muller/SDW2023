@@ -38,7 +38,7 @@ import json
 
 > declarando cada coluna na tabela para cada ID
 ```
-df = pd.read_csv('SDW2023.csv')
+df = pd.read_csv('user.csv')
 User_ids = df['UserID'].tolist()
 print(user_ids)
 
@@ -63,23 +63,63 @@ print(json.dumps(users, indent=2))
 
 3.  Isto ira te retornar um arquivo.json com mais ou menos a sintaxe a seguir:
 ```
-[   {
-        "id": 404,
-        "name": "d4t4muller",
-        "account": 
-        "id": 7
+[
+  {
+    "id": 1015,
+    "name": "d4t4muller",
+    "account": {
+      "id": 1087,
+      "number": "99999",
+      "agency": "8888",
+      "balance": 0.0,
+      "limit": 8000.0
     },
-    {
-        "number": "00001-1",
-        "agency": "0001",
-        "balance": 0.0,
-        "limit": 500.0
+    "card": {
+      "id": 998,
+      "number": "8528 **** **** ***8 ",
+      "limit": 10000.0
     },
-        "card": {
-        "id": 4,
-        "number": "**** **** **** 1111",
-        "limit": 1000.0
-    },
-    "features": []
+    "features": [
+      {
+        "id": 366,
+        "icon": "none",
+        "description": "none"
+      }
+    ],
+    "news": [
+      {
+        "id": 2342,
+        "icon": "none",
+        "description": "none"
+      }
+    ]
+  }
 ]
 ```
+
+
+
+
+## Transform 
+
+Utilize a API do OpenAI GPT-4 para gerar uma mensagem de marketing personalizada para cada usuário.
+
+```!pip install openai```
+
+
+```
+# [Documentação Oficial da API OpenAI:](https://platform.openai.com/docs/api-reference/introduction)
+# [Informações sobre o Período Gratuito:](https://help.openai.com/en/articles/4936830)
+
+# Para gerar uma API Key:
+# 1. Crie uma conta na OpenAI
+# 2. Acesse a seção "API Keys"
+# 3. Clique em "Create API Key"
+# [Link direto:](https://platform.openai.com/account/api-keys)
+
+# Substitua por sua API Key da OpenAI, ela será salva como uma variável de ambiente.
+openai_api_key = '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'
+
+
+```
+
