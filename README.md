@@ -100,7 +100,7 @@ print(json.dumps(users, indent=2))
 
 
 
-## Transform 
+## **T**ransform 
 
 Utilize a API do OpenAI GPT-4 para gerar uma mensagem de marketing personalizada para cada usuário.
 
@@ -108,16 +108,16 @@ Utilize a API do OpenAI GPT-4 para gerar uma mensagem de marketing personalizada
 
 
 
-# [Documentação Oficial da API OpenAI:](https://platform.openai.com/docs/api-reference/introduction)
-# [Informações sobre o Período Gratuito:](https://help.openai.com/en/articles/4936830)
+-[Documentação Oficial da API OpenAI:](https://platform.openai.com/docs/api-reference/introduction)
+-[Informações sobre o Período Gratuito:](https://help.openai.com/en/articles/4936830)
 
-# Para gerar uma API Key:
-# 1. Crie uma conta na OpenAI
-# 2. Acesse a seção "API Keys"
-# 3. Clique em "Create API Key"
-# [Link direto:](https://platform.openai.com/account/api-keys)
+- Para gerar uma API Key:
+-1. Crie uma conta na OpenAI
+-2. Acesse a seção "API Keys"
+-3. Clique em "Create API Key"
+-[Link direto:](https://platform.openai.com/account/api-keys)
 
-# Substitua por sua API Key da OpenAI, ela será salva como uma variável de ambiente.
+>Substitua por sua API Key da OpenAI, ela será salva como uma variável de ambiente.
 openai_api_key = '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'
 
 
