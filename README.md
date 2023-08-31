@@ -118,6 +118,8 @@ Utilize a API do OpenAI GPT-4 para gerar uma mensagem de marketing personalizada
 -[Link direto:](https://platform.openai.com/account/api-keys)
 
 >Substitua por sua API Key da OpenAI, ela será salva como uma variável de ambiente.
+
+
 openai_api_key = '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'
 
 
