@@ -107,7 +107,7 @@ Utilize a API do OpenAI GPT-4 para gerar uma mensagem de marketing personalizada
 ```!pip install openai```
 
 
-```
+
 # [Documentação Oficial da API OpenAI:](https://platform.openai.com/docs/api-reference/introduction)
 # [Informações sobre o Período Gratuito:](https://help.openai.com/en/articles/4936830)
 
@@ -121,5 +121,5 @@ Utilize a API do OpenAI GPT-4 para gerar uma mensagem de marketing personalizada
 openai_api_key = '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'
 
 
-```
+
 
